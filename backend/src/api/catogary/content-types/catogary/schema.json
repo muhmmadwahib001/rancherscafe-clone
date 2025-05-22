@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catogaries",
+  "info": {
+    "singularName": "catogary",
+    "pluralName": "catogaries",
+    "displayName": "catogaries",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item",
+      "mappedBy": "catogaries"
+    }
+  }
+}
